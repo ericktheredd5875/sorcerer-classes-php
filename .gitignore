@@ -1,2 +1,10 @@
 
 /vendor
+composer.lock
+composer-hold.json
+claven/claven.class.php
+errorhandler/error.html
+errorhandler/error_handler_test.php
+gdataapi/gdataapi.class.php
+geomath/geomath.class.php
+xmlextended/xmlextended.class.php
