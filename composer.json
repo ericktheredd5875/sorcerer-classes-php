@@ -1,7 +1,8 @@
 {
     "name": "ericktheredd5875/sorcerer-classes-php",
     "description": "Set of utility classes written in PHP",
-    "type": "vcs",
+    "type": "library",
+    "license": "AGPL-3.0-or-later",
     "authors": [
         {
             "name": "Eric Harris",
@@ -11,12 +12,24 @@
     "autoload": {
         "psr-4":
         {
-            "Sorcerer\\": "/Sorcerer"
+            "Sorcerer\\": "src/Sorcerer"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Sorcerer\\Tests\\": "tests/"
         }
     },
 
     "require":
     {
-        "php" : ">=7.0"
+        "php" : ">=7.3",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-dom": "*",
+        "ext-mbstring": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5"
     }
 }
