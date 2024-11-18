@@ -8,7 +8,7 @@ use Sorcerer\Cliff\ClavenException;
 
 class Claven
 {
-    CONST SG_KEY = "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";
+    CONST SG_KEY = "";
 
     private $debug;
     private $debug_mode;
