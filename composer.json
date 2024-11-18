@@ -1,0 +1,22 @@
+{
+    "name": "ericktheredd5875/sorcerer-classes-php",
+    "description": "Set of utility classes written in PHP",
+    "type": "vcs",
+    "authors": [
+        {
+            "name": "Eric Harris",
+            "email": "ericktheredd5875@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4":
+        {
+            "Sorcerer\\": "/Sorcerer"
+        }
+    },
+
+    "require":
+    {
+        "php" : ">=7.0"
+    }
+}
