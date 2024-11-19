@@ -8,3 +8,4 @@ errorhandler/error_handler_test.php
 gdataapi/gdataapi.class.php
 geomath/geomath.class.php
 xmlextended/xmlextended.class.php
+/tests/_files/Sorcerer/Logging/logs/*.txt

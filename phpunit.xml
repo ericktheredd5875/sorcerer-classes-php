@@ -4,11 +4,14 @@
         verbose="true" 
         stopOnFailure="false">
     <testsuites>
-        <testsuite name="XML-Extended">
-            <directory>tests/unit/Sorcerer/XML</directory>
-        </testsuite>
         <testsuite name="Geo-Math">
             <directory>tests/unit/Sorcerer/Geo</directory>
+        </testsuite>
+        <testsuite name="Log-Writer">
+            <directory>tests/unit/Sorcerer/Logging</directory>
+        </testsuite>
+        <testsuite name="XML-Extended">
+            <directory>tests/unit/Sorcerer/XML</directory>
         </testsuite>
     </testsuites>
 </phpunit>
