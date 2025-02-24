@@ -2,20 +2,20 @@
 
 if(!defined("ERR_DB_HOST"))
 {
-    define("ERR_DB_HOST", "10.209.97.159"); // RS::MasterMother
+    define("ERR_DB_HOST", "");
 }
 
 if(!defined("ERR_DB_USERNAME"))
 {   define("ERR_DB_USERNAME",   "error_admin");     }
 
 if(!defined("ERR_DB_PASSWORD"))
-{   define("ERR_DB_PASSWORD",   "z@p@t0s_@r3_sh03s");     }
+{   define("ERR_DB_PASSWORD",   "");     }
 
 if(!defined("ERR_DB_DATABASE"))
-{   define("ERR_DB_DATABASE",   "idx_master");     }
+{   define("ERR_DB_DATABASE",   "");     }
 
 if(!defined("ERR_EMAIL_FROM"))
-{   define("ERR_EMAIL_FROM",   "ericktheredd5875@gmail.com");     }
+{   define("ERR_EMAIL_FROM",   "");     }
 
 
 // Should be: DEV or LIVE;
@@ -23,19 +23,10 @@ if(!defined("ERR_HANDLER_MODE"))
 {   define("ERR_HANDLER_MODE", "DEV");      }
 
 /*
-
-GRANT USAGE ON *.* TO 'error_admin'@'10.181.233.48' IDENTIFIED BY PASSWORD 'z@p@t0s_@r3_sh03s';
-GRANT SELECT, INSERT, UPDATE, DELETE ON `idx_error_log`.* TO 'error_admin'@'10.181.233.48';
-
-
-GRANT USAGE ON *.* TO 'error_admin'@'10.181.224.35' IDENTIFIED BY PASSWORD 'z@p@t0s_@r3_sh03s';
-GRANT SELECT, INSERT, UPDATE, DELETE ON `idx_error_log`.* TO 'error_admin'@'10.181.224.35';
+GRANT USAGE ON *.* TO '!DB-USER!'@'!IP!' IDENTIFIED BY PASSWORD '!PASSWORD!';
+GRANT SELECT, INSERT, UPDATE, DELETE ON `idx_error_log`.* TO '!DB-USER!'@'!IP!';
 
 
-mysqldump -h 10.181.230.73 -uroot -pGmT8s76k4paL2oE idx_error_log > ~/transition-to-master-mother.sql
-mysql -h 10.209.97.159 -uroot -pGmT8s76k4paL2oE -r idx_error_log < ~/transition-to-master-mother.sql
-
-CREATE TABLE idx_master.error_log LIKE idx_error_log.errors
-INSERT INTO idx_master.errors (SELECT * FROM idx_error_log.errors)
-
+GRANT USAGE ON *.* TO '!DB-USER!'@'!IP!' IDENTIFIED BY PASSWORD '!PASSWORD!';
+GRANT SELECT, INSERT, UPDATE, DELETE ON `idx_error_log`.* TO '!DB-USER!'@'1!IP!';
  */
