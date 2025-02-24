@@ -5,7 +5,7 @@ namespace Sorcerer\Hoard;
 
 class HoardMc
 {
-    CONST MEMCACHE_IP = "10.210.66.82";
+    CONST MEMCACHE_IP = "";
     CONST MEMCACHE_PORT = 11211;
 
     // Default TTL 300 sec = 5 min
