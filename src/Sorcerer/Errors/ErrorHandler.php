@@ -9,7 +9,7 @@ use Sorcerer\Pdo\PdoDatabase;
 
 class ErrorHandler
 {
-    CONST ERROR_HTML = "https://{yourwebsite}/error.html";
+    CONST ERROR_HTML = "http://4051.cevadosite.com/error.html";
     CONST ERROR_FILENAME = "error-";
 
     private $handler_mode;
