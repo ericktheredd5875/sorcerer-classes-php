@@ -467,6 +467,14 @@ class Cleaner
 	}
 	/*=====  End of Collections of Checked Chars and Strings  ======*/
 
+	/*================================================================
+    =            Snake_case aliases (backward compatibility)        =
+    ================================================================*/
+    public function clean_string(string $data, bool $strip = false) { return $this->cleanString($data, $strip); }
+    public function clean_file_name($data)                          { return $this->cleanFileName($data); }
+    public function clean_underscore($data)                         { return $this->cleanUnderscore($data); }
+    /*=====  End of Snake_case aliases  ======*/
+	
 	function __destruct()
 	{
 		unset($this->string_black_list);
